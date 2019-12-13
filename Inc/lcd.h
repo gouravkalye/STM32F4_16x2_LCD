@@ -24,6 +24,7 @@ typedef struct {
     LCD_GPIOPair DB7;
 } LCD_HandleTypeDef;
 
+void LCD_SetPosition(uint8_t line,uint8_t position);
 
 void LCD_sendCmd(LCD_HandleTypeDef *lcd, uint8_t data);
 
