@@ -100,7 +100,7 @@ int main(void)
 
 //	  HAL_GPIO_TogglePin(GPIOG, LCD_EN_Pin);
 //	  HAL_Delay(500);
-	  HAL_GPIO_WritePin(GPIOG, LCD_EN_Pin, !(0b00000001 & 0x01) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+	  HAL_GPIO_WritePin(GPIOG, LCD_EN_Pin, !!(0b00000001 & 0x01) ? GPIO_PIN_RESET : GPIO_PIN_SET);
 	  HAL_GPIO_WritePin(GPIOG, LCD_RS_Pin, !!(0b00000010 & 0x02) ? GPIO_PIN_SET : GPIO_PIN_RESET);
     /* USER CODE BEGIN 3 */
   }
